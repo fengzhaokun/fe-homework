@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        fe-homework
+    </title>
+    
+</head>
+
+<body>
+    <div id='header' class="header">
+
+        <div id='logo' class="logo">
+            <div class="icon-navicon"></div><img src="../images/logo.svg" />
+        </div>
+        <div id='login"' class="login"><img src="../images/icon-user.png" />
+            <div class="icon-angle-down"></div>
+            <div class="setting">
+                <div class="profile">
+                    <div class="icon-id-card"></div> Profile
+                </div>
+                <div class="sign-out">
+                    <div class="icon-sign-in"></div> Sign Out
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='middle' class="middle">
+        <div id='sidebar' class="sidebar">
+            <div id='menu' class="menu">
+                <ul>
+                    <li><a href='#'><span class="icon-dashboard"></span><span>DASHBAORD</span></a></li>
+                    <li><a href='#'><span class="icon-sitemap"></span><span>AGENT</span></a></li>
+                    <li><a href='#'><span class="icon-boat"></span><span>MY CRUISE</span></a></li>
+                    <li><a href='#'><span class="icon-life-bouy"></span><span>HELP</span></a></li>
+                </ul>
+            </div>
+            <div id='history' class="history">
+                <h2>History</h2>
+                <ul class="disc">
+                    <!-- <li>bjstdmngbgr02/Acceptance_test</li>
+                    <li>bjstdmngbgr03/Acceptance_test</li>
+                    <li>bjstdmngbgr04/Acceptance_test</li>
+                    <li>bjstdmngbgr05/Acceptance_test</li>
+                    <li>bjstdmngbgr06/Acceptance_test</li>
+                    <li>bjstdmngbgr07/Acceptance_test</li>
+                    <li>bjstdmngbgr08/Acceptance_test</li>
+                    <li>bjstdmngbgr09/Acceptance_test</li>
+                    <li>bjstdmngbgr10/Acceptance_test</li>
+                    <li>bjstdmngbgr11/Acceptance_test</li>
+                    <li>bjstdmngbgr12/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li>
+                    <li>bjstdmngbgr13/Acceptance_test</li> -->
+                </ul>
+            </div>
+    
+        </div>
+        <div id='content' class="content">
+            <div id='status' class="status">
+                <div id='building' class="building">
+                    <div id='badge-building' class="badge-building">Building</div>
+                    <div class="icon-cog"></div>
+                    <div id='number-building' class="number-building">3</div>
+                </div>
+                <div id='idle' class="idle">
+                    <div id='badge-idle' class="badge-idle">Idle</div>
+                    <div class="icon-coffee"></div>
+                    <div id='number-idle' class="number-idle">5</div>
+                </div>
+                <div id='kind' class="kind">
+                    <div class="all">
+                        <div class="all-label">ALL</div>
+                        <div class="all-num">8</div>
+                    </div>
+                    <div class="physical">
+                        <div class="physical-label">PHYSICAL</div>
+                        <div class="physical-num"> 4</div>
+                    </div>
+                    <div class="virtual">
+                        <div class="virtual-label">VIRTUAL</div>
+                        <div class="virtual-num">4</div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab" class="tab">
+                <div id="tabTitle" class="tab-title">
+                    <ul>
+                        <li class="select"><a href="#">All</a></li>
+                        <li><a href="#">Physical</a></li>
+                        <li><a href="#">Virtual</a></li>
+                    </ul>
+                </div>
+                <div id='search' class="search">
+                    <input type="search" />
+                    <div class="icon-search"></div>
+                    <div class="icon-th-card"></div>
+                    <div class="icon-th-list"></div>
+    
+                </div>
+                <div id="tabContentDiv" class="tabContentDiv">
+                        <!-- <div class="item">
+                            <div class="icon-windows"></div>
+                            <div class="item-right">
+                                <div class="line1">
+                                    <div class="agent-site"><span class="icon-desktop"></span> <a>bjstdmngbgr01.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-idle">idle</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.102</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                    <div class="resource">Firefox<span class="icon-trash"></span></div>
+                                    <div class="resource"> Safari <span class="icon-trash"></span></div>
+                                    <div class="resource">Ubuntu <span class="icon-trash"></span></div>
+                                    <div class="resource">Chrome <span class="icon-trash"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon-windows"></div>
+                            <div class="item-right">
+                                <div class="line1">
+    
+                                    <div class="agent-site"><span class="icon-desktop"></span><a>bjstdmngbgr08.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-building">building</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.243</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                    <div class="resource">Firefox<span class="icon-trash"></span></div>
+                                    <div class="resource"> Safari <span class="icon-trash"></span></div>
+                                    <div class="resource">Ubuntu <span class="icon-trash"></span></div>
+                                    <div class="resource">Chrome <span class="icon-trash"></span></div>
+                                    <div class="denyBtn"><span class="icon-deny"></span>Deny</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon-ubuntu"></div>
+                            <div class="item-right">
+                                <div class="line1">
+    
+                                    <div class="agent-site"><span class="icon-desktop"></span><a>bjstdmngbgr10.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-building">building</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.80</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                    <div class="resource">Firefox<span class="icon-trash"></span></div>
+                                    <div class="resource"> Safari <span class="icon-trash"></span></div>
+                                    <div class="resource">Ubuntu <span class="icon-trash"></span></div>
+                                    <div class="resource">Chrome <span class="icon-trash"></span></div>
+                                    <div class="denyBtn"><span class="icon-deny"></span>Deny</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon-debin"></div>
+                            <div class="item-right">
+                                <div class="line1">
+    
+                                    <div class="agent-site"><span class="icon-desktop"></span><a>bjstdmngbgr11.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-building">building</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.117</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                    <div class="resource">Firefox<span class="icon-trash"></span></div>
+                                    <div class="resource"> Safari <span class="icon-trash"></span></div>
+                                    <div class="resource">Ubuntu <span class="icon-trash"></span></div>
+                                    <div class="resource">Chrome <span class="icon-trash"></span></div>
+                                    <div class="denyBtn"><span class="icon-deny"></span>Deny</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon-suse"></div>
+                            <div class="item-right">
+                                <div class="line1">
+    
+                                    <div class="agent-site"><span class="icon-desktop"></span><a>bjstdmngbgr15.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-idle">idle</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.110</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon-centos"></div>
+                            <div class="item-right">
+                                <div class="line1">
+    
+                                    <div class="agent-site"><span class="icon-desktop"></span><a>bjstdmngbgr01.thoughtworks.com</a></div>
+                                    <div class="agent-status agent-status-idle">idle</div>
+                                    <div class="agent-ip"><span class="icon-info"></span><a>192.168.1.102</a></div>
+                                    <div class="agent-folder"><span class="icon-folder"></span><a>/var/lib/cruise-agent</a></div>
+                                </div>
+                                <div class="line2">
+                                    <div class="icon-plus"></div>
+                                    <div class="resource">Firefox<span class="icon-trash"></span></div>
+                                    <div class="resource"> Safari <span class="icon-trash"></span></div>
+                                    <div class="resource">Ubuntu <span class="icon-trash"></span></div>
+                                    <div class="resource">Chrome <span class="icon-trash"></span></div>
+                                </div>
+                            </div>
+                        </div> -->
+    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+    <div id='footer' style="height:10%;">
+    </div>
+    <!-- <div id="mask"></div>
+    <div id="addWin">
+        <div class="icon-win">
+            <div class="icon-angle-up"></div>
+            <div class="icon-close"> </div>
+            <div>
+                <p>Separate multiple resource name with commas</p>
+                <input id="input1" type="text" placeholder="e.g. Chrome,Firefox" />
+            </div>
+    
+            <div>
+                <input id="btn1" type="button" value="Add Resouces" />
+                <input id="btn2" type="button" value="Cancel">
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>

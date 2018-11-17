@@ -1,0 +1,958 @@
+body {
+    background: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 60px;
+    width: 100%
+}
+
+.icon-navicon {
+    font-size: 20px;
+    line-height: 20px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: none;
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    min-height: 1000px;
+    background: #2d4054;
+}
+
+.menu {
+    height: 450px;
+}
+
+.menu ul {
+    width: 100%;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    margin-bottom: 1px;
+    text-indent: 10px;
+    color: #ccc;
+    text-align: left;
+}
+
+.menu a:hover {
+    background-color: #435466;
+}
+
+.icon-dashboard, .icon-sitemap, .icon-boat, .icon-life-bouy {
+    margin-right: 10px;
+    font-size: 20px;
+    line-height: 45px;
+    height: 45px;
+    display: inline-block;
+    float: left;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ccc;
+    text-indent: 10px;
+}
+
+.history ul li {
+    font-size: 12px;
+    color: #999;
+    height: 25px;
+    text-indent: 10px;
+    line-height: 25px;
+}
+
+.disc {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #999;
+}
+
+.history li:hover {
+    background-color: #00b4cf;
+}
+
+.logo {
+    float: left;
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    position: relative
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 40%
+}
+
+.login {
+    float: left;
+    width: 10%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.login img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.icon-angle-down {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+
+.setting {
+    width: 120px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+}
+
+.profile {
+    width: 100px;
+    height: 30px;
+    padding: 10px 10px 5px 10px;
+    margin-top: 5px;
+}
+
+.icon-id-card {
+    display: inline;
+    margin-right: 10px;
+}
+
+.profile:hover, .sign-out:hover {
+    background: #efefef;
+}
+
+.sign-out {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center
+}
+
+.icon-sign-in {
+    display: inline;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+.content {
+    float: left;
+    width: 78%;
+    margin: 20px 10px;
+    min-height: 1000px;
+}
+
+.status {
+    height: 100px;
+    width: 100%
+}
+
+.building {
+    float: left;
+    width: 32%;
+    height: 144px;
+    background-color: #ff9a2a;
+    margin: 20px 5px 20px 0px;
+    position: relative;
+}
+
+.idle {
+    float: left;
+    background: #7fbc39;
+    width: 33%;
+    height: 144px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.icon-cog {
+    color: #ddd;
+    opacity: 0.2;
+    font-size: 144px;
+    line-height: 144px !important;
+    vertical-align: middle;
+    text-align: center;
+    animation: rotate 2s linear 0s infinite;
+    -webkit-animation: rotate 2s linear 0s infinite;
+    -moz-animation: rotate 2s linear 0s infinite;
+    -o-animation: rotate 2s linear 0s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+.icon-coffee {
+    color: #ddd;
+    opacity: 0.2;
+    font-size: 144px;
+    line-height: 144px !important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.icon-plus {
+    font-size: 18px;
+    line-height: 22px !important;
+    width: 30px;
+    height: 22px;
+    background: #00b4cf;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    float: left;
+    margin: 5px 10px 5px 0px;
+}
+
+.icon-plus:hover {
+    background: #01869a
+}
+
+.kind {
+    float: left;
+    width: 33%;
+    height: 144px;
+    margin: 20px 0px 20px 5px;
+    background: #fff;
+}
+
+.badge-building, .badge-idle {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font: 18px bold;
+    color: #fff;
+}
+
+.number-building, .number-idle {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font: 48px bold;
+    color: #fff;
+}
+
+.tabContentDiv {
+    float: left;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.tab {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    overflow: hidden;
+}
+
+.tab-title {
+    height: 50px;
+    position: relative;
+    background: #f7f7f7;
+    float: left;
+    width: 30%;
+}
+
+.tab-title ul {
+    position: absolute;
+    width: 300px;
+    list-style: none;
+}
+
+.tab-title ul li {
+    float: left;
+    width: 30%;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    overflow: hidden;
+    background: #fff;
+    margin: 3px 2px;
+}
+
+.tab-title ul .select {
+    background: #fff;
+    border-bottom: 3px solid #00b4cf;
+}
+
+.tab-title a {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tab-title li a:link, .tab-title li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.tab-title li a:hover {
+    color: #7fbc39;
+}
+
+.search {
+    height: 53px;
+    background: #fff;
+    float: left;
+    width: 69%;
+    margin-left: 5px;
+    position: relative;
+    margin-top: 2px;
+}
+
+.search input {
+    height: 30px;
+    width: 200px;
+    margin: 12px 5px;
+    background: #e1e4e6;
+    border: none;
+}
+
+.icon-search {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.icon-th-card {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-size: 20px;
+    line-height: 20px !important;
+}
+
+.icon-th-list {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 20px !important;
+    color: #00b4cf;
+}
+
+
+
+.item {
+    height: 120px;
+    border: 1px solid #fff;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.icon-windows {
+    background: url('../images/windows.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.icon-ubuntu {
+    background: url('../images/ubuntu.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.icon-suse {
+    background: url('../images/suse.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.icon-debin {
+    background: url('../images/debin.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.icon-centos {
+    background: url('../images/cent_os.png') no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.item-right {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    width: 90%;
+}
+
+.line1, .line2 {
+    height: 40px;
+    margin-left: 30px;
+    position: relative
+}
+
+.icon-desktop, .icon-info, .icon-folder, .icon-trash {
+    font-size: 16px;
+}
+.icon-trash{
+    line-height: 22px !important;
+    height: 22px;
+    display: inline-block;
+}
+
+.icon-desktop, .icon-info, .icon-folder {
+    opacity: 0.5;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    float: left;
+}
+
+.agent-site {
+    width: 300px;
+}
+
+.agent-ip {
+    width: 120px;
+}
+
+.agent-folder {
+    width: 150px;
+}
+
+.agent-site, .agent-ip, .agent-folder {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.icon-trash {
+    margin-left: 10px;
+}
+
+.agent-site a {
+    color: #01869a;
+    font-weight: bold;
+}
+
+.agent-site a:hover {
+    color: #00b4cf;
+}
+
+.agent-site a, .agent-ip a, .agent-folder a {
+    padding: 5px 5px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.agent-status {
+    width: 60px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px
+}
+
+.agent-status-idle {
+    background: #7fbc39;
+}
+
+.agent-status-building {
+    background: #ff9a2a;
+}
+
+.resource {
+    background: #efefef;
+    width: 110px;
+    height: 22px;
+    margin: 5px 10px 5px 0px;
+    padding: 5px 5px;
+    text-align: center;
+    float: left;
+
+}
+.resourceText{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px;
+    float: left;
+}
+
+.denyBtn {
+    height: 20px;
+    width: 80px;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 18px;
+    background: #00b4cf;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+}
+
+.denyBtn:hover {
+    background: #018694;
+}
+
+.denyBtn a {
+    height: 30px;
+}
+
+.icon-deny {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#mask {
+    background: #000;
+    opacity: 0;
+    filter: alpha(opacity=75);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    display: none;
+}
+
+/* #addWin {
+    position: absolute;
+    left: 360px;
+    top: 660px;
+    z-index: 10001;
+    display: none;
+} */
+
+.icon-win {
+    width: 570px;
+    height: 160px;
+    border: 1px solid #00b4cf;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 3 5px (#000, 30%);
+}
+
+.icon-win p {
+    text-align: left;
+    padding: 5px 10px;
+    width: 350px;
+    height: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.icon-angle-up {
+    position: absolute;
+    left: 20px;
+    top: -17px;
+    font-size: 20px;
+    color: #00b4cf;
+    line-height: 25px;
+    background: #fff;
+}
+
+.icon-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #00b4cf;
+    font-size: 20px;
+}
+
+#input1 {
+    height: 30px;
+    width: 530px;
+    margin: 5px 20px;
+}
+
+#btn1 {
+    height: 30px;
+    width: 110px;
+    background: #00b4cf;
+    border: none;
+    margin: 20px 5px 20px 20px;
+}
+
+#btn2 {
+    height: 30px;
+    width: 110px;
+    background: #00b4cf;
+    border: none;
+    margin: 20px 20px 20px 5px;
+}
+
+#btn1:hover, #btn2:hover {
+    background: #01869a;
+}
+
+/*Desktop HD*/
+
+@media screen and (min-width:1200px) {
+    .middle {
+        height: 80%;
+        min-height: 900px;
+        width: 1200px;
+        margin: auto auto;
+    }
+    .all, .physical, .virtual {
+        float: left;
+        margin: 10px 20px;
+        padding: 10px 5px;
+    }
+    .all-label, .physical-label, .virtual-label {
+        font-size: 12px;
+        text-align: center;
+        padding: 0px 5px;
+        line-height: 12px;
+        width: 40px;
+    }
+    .all-num, .physical-num, .virtual-num {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        width: 40px;
+        padding: 0px 5px;
+        margin-top: 60px;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    .middle {
+        height: 80%;
+        min-height: 1000px;
+        margin-right: 10px;
+    }
+    .all, .physical, .virtual {
+        margin: 10px 0px;
+    }
+    .all-label, .physical-label, .virtual-label {
+        font-size: 12px;
+        width: 70%;
+        float: left;
+        line-height: 20px;
+        padding-left: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin: 5px 1px;
+    }
+    .all-num, .physical-num, .virtual-num {
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        width: 20%;
+        height: 20px;
+        margin: 5px 1px;
+    }
+    .tab-title {
+        width: 32%;
+        margin-right: 5px;
+    }
+    .search {
+        width: 64%;
+        margin-left: 13px;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .middle {
+        height: 80%;
+        min-height: 1000px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .icon-navicon {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+        width: 250px;
+        height: 100%;
+        min-height: 1000px;
+        background: #2d4054;
+        z-index: 101;
+        float: none;
+    }
+    .content {
+        width: 100%;
+        min-height: 1000px;
+        z-index: 100;
+        margin: 20px 0px;
+    }
+    .tab-title {
+        width: 36%;
+    }
+    .tab-title ul {
+        width: 100%;
+    }
+    .tab-title ul li {
+        width: 31%;
+    }
+    .search {
+        width: 64%;
+        margin-left: -8px;
+        margin-top: 3px;
+    }
+    .icon-th-card {
+        display: none;
+    }
+    .icon-th-list {
+        display: none;
+    }
+    .item {
+        margin: 10px 0px;
+    }
+    .icon-windows, .icon-debin, .icon-suse, .icon-ubuntu, .icon-centos {
+        display: none;
+    }
+    .item-right {
+        width: 100%;
+        left: 0px;
+    }
+    .building,.kind {
+        width: 32%;
+        margin: 10px 0px;
+    }
+    .idle{
+        width: 33%;
+        margin: 10px;
+    }
+    .all, .physical, .virtual {
+        margin: 10px 0px;
+    }
+    .all-label, .physical-label, .virtual-label {
+        font-size: 12px;
+        width: 70%;
+        float: left;
+        line-height: 20px;
+        padding-left: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin: 5px 1px;
+    }
+    .all-num, .physical-num, .virtual-num {
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        width: 20%;
+        height: 20px;
+        margin: 5px 1px;
+    }
+}
+
+/*Phone*/
+
+@media screen and (max-width:767px) {
+    .logo {
+        width: 85%;
+    }
+    .logo img {
+        right: 25%;
+    }
+    .login {
+        width: 15%;
+    }
+    .middle {
+        height: 80%;
+        min-height: 1000px;
+    }
+    .icon-navicon {
+        display: block;
+    }
+    .logo img {
+        right: 25%;
+    }
+    .sidebar {
+        display: none;
+        width: 250px;
+        height: 100%;
+        min-height: 1000px;
+        background: #2d4054;
+        z-index: 101;
+        float: none;
+    }
+    .content {
+        width: 100%;
+        min-height: 900px;
+        z-index: 100;
+        margin: auto auto;
+    }
+    .building {
+        width: 47%;
+        margin: 10px -10px 10px 5px;
+    }
+    .idle {
+        width: 48%;
+        margin: 10px -20px 10px 25px;
+    }
+    .kind {
+        width: 100%;
+        margin: 10px -2px;
+    }
+    .all, .physical, .virtual {
+        float: left;
+        margin: 10px 0px;
+        padding: 10px 5px;
+        width: 30%;
+    }
+    .all-label, .physical-label, .virtual-label {
+        font-size: 12px;
+        text-align: center;
+        padding: 0px 5px;
+        line-height: 12px;
+        height: 20px;
+    }
+    .all-num, .physical-num, .virtual-num {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        height: 20px;
+        padding: 20px 5px;
+    }
+    .search {
+        width: 100%;
+        margin-left: 2px;
+        top: -50px;
+    }
+    .search input {
+        width: 98%;
+    }
+    .tab-title {
+        width: 100%;
+        top: 60px;
+    }
+    .tab-title ul {
+        width: 100%;
+    }
+    .tab-title ul li {
+        width: 32%;
+    }
+    .icon-th-card, .icon-th-list {
+        display: none;
+    }
+    .item {
+        height: 200px;
+        margin: 10px 0;
+        width: 100%
+    }
+    .icon-windows, .icon-debin, .icon-suse, .icon-ubuntu, .icon-centos {
+        display: none;
+    }
+    .item-right {
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        border-left: 2px solid #7fbc39;
+    }
+    .agent-site, .agent-ip, .agent-folder {
+        margin-left: 0px;
+        display: block;
+        height: 30px;
+    }
+    .line1, .line2 {
+        height: 90px;
+    }
+    .agent-status-idle, .agent-status-building {
+        display: none;
+    }
+}
+
+/* @media screen and (max-width:597px) {
+    .tab-title ul li {
+        width: 32%;
+    }
+} */
