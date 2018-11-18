@@ -121,7 +121,7 @@ h2 {
     margin: 5px;
 }
 
-.icon-angle-down {
+.login .icon-angle-down {
     position: absolute;
     top: 20px;
     left: 45px;
@@ -573,7 +573,7 @@ h2 {
     color: #fff;
     position: absolute;
     right: 5px;
-    bottom: -20px;
+    bottom: 0px;
 }
 
 .denyBtn:hover {
@@ -630,14 +630,25 @@ h2 {
     margin-left: 10px;
 }
 
-.icon-angle-up {
+.icon-win .icon-angle-up {
     position: absolute;
     left: 20px;
-    top: -17px;
+    top: -15px;
     font-size: 20px;
     color: #00b4cf;
-    line-height: 25px;
+    line-height: 20px;
     background: #fff;
+    display: none;
+}
+.icon-win .icon-angle-down{
+    position: absolute;
+    left: 20px;
+    bottom: -13px;
+    font-size: 20px;
+    color: #00b4cf;
+    line-height: 20px;
+    background: #fff;
+    display: none;
 }
 
 .icon-close {
@@ -679,7 +690,7 @@ h2 {
 @media screen and (min-width:1200px) {
     .middle {
         height: 80%;
-        min-height: 900px;
+        min-height: 1000px;
         width: 1200px;
         margin: auto auto;
     }
@@ -765,6 +776,7 @@ h2 {
         background: #2d4054;
         z-index: 101;
         float: none;
+        position: absolute;
     }
     .content {
         width: 100%;
@@ -864,6 +876,7 @@ h2 {
         background: #2d4054;
         z-index: 101;
         float: none;
+        position: absolute;
     }
     .content {
         width: 100%;

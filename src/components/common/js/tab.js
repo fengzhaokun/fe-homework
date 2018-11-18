@@ -1,6 +1,6 @@
 import tab from "../config/tab.json";
 
-const template1 = data => `<div class="item">
+const template1 = data => `<div id="${data.id}"class="item">
     <div class="icon-${data.os}"></div>
     <div class="item-right">
         <div class="line1">
@@ -15,7 +15,7 @@ const template1 = data => `<div class="item">
     </div>
 </div>
 </div>`;
-const template2 = data => `<div class="item">
+const template2 = data => `<div id="${data.id}" class="item">
     <div class="icon-${data.os}"></div>
     <div class="item-right">
         <div class="line1">

@@ -1,6 +1,7 @@
 {
     "datas":[
         {
+            "id": "item01",
             "os":"windows",
             "site":"bjstdmngbgr01.thoughtworks.com",
             "status":"idle",
@@ -9,6 +10,7 @@
             "resources":["Firefox","Safari","Ubuntu","Chrome"]
         },
         {
+            "id": "item02",
             "os":"windows",
             "site":"bjstdmngbgr08.thoughtworks.com",
             "status":"building",
@@ -17,6 +19,7 @@
             "resources":["Firefox","Safari","Ubuntu","Chrome"]
         },
         {
+            "id": "item03",
             "os":"ubuntu",
             "site":"bjstdmngbgr10.thoughtworks.com",
             "status":"building",
@@ -25,6 +28,7 @@
             "resources":["Firefox","Safari"]
         },
         {
+            "id": "item04",
             "os":"debin",
             "site":"bjstdmngbgr11.thoughtworks.com",
             "status":"building",
@@ -33,6 +37,7 @@
             "resources":["Firefox","Safari","Ubuntu","Chrome"]
         },
         {
+            "id": "item05",
             "os":"suse",
             "site":"bjstdmngbgr15.thoughtworks.com",
             "status":"idle",
@@ -41,6 +46,7 @@
             "resources":[]
         },
         {
+            "id": "item06",
             "os":"centos",
             "site":"bjstdmngbgr01.thoughtworks.com",
             "status":"idle",
